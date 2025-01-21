@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png">
+    <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        background-image: url("https://121clicks.com/wp-content/uploads/2011/12/beautiful_india_46.jpg");
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .main {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+        transition: transform 0.2s;
+        width: 500px;
+        text-align: center;
+    }
+
+    h1 {
+        color: black;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+        color: #555;
+        font-weight: bold;
+    }
+
+
+    input {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: #4CAF50;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lighter1 {
+    background-color:#000;
+    padding: 20px;
+    text-align: center;
+    }
+
+    
+.user-login-5 .bs-reset{margin:0;padding:0}
+
+.user-login-5 .login-container .login-copyright,.user-login-5 .login-container .login-social,.user-login-5 .login-container>.login-content{padding:0 80px}
+
+@media (max-width:1365px){
+    .user-login-5 .login-logo.login-6{top:40px;left:40px}
+    .user-login-5 .login-container .login-copyright,.user-login-5 .login-container .login-social,.user-login-5 .login-container>.login-content{padding:0 40px}
+    .user-login-5 .login-container .login-social{padding-right:0}
+    .user-login-5 .login-container .login-copyright{padding-left:0}
+}
+
+@media screen and (max-width:767px){
+    .user-login-5 .login-container .login-social{margin:0 auto 10px;padding:0;text-align:center;width:100%}
+    .user-login-5 .login-container .login-copyright{margin:0 auto;padding:0!important;text-align:center}
+}
+
+.user-login-5 .login-container>.login-footer .login-copyright{padding-left:0;margin-top:6px}
+
+.user-login-5 .login-container>.login-footer .login-copyright>p{margin:0;font-size:13px;color:#a9b5be}
+
+.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{position:relative;min-height:1px;padding-left:15px;padding-right:15px}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <h1>India</h1>
+        <h3>Enter your login credentials</h3>
+        <form action="">
+            <label for="first">Username:</label>
+            <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+
+            <label for="password">Password:</label>
+            <input class="input-field" type="password" id="psw" name="psw" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            
+            <div class="wrap">
+                <button type="submit" onclick="solve()"><a href="India_responsive.html" target="_blank">Submit</a></button>
+            </div>
+        </form>
+        <form>
+            <div id="message">
+                <h3>
+                    Password must contain the following:
+                </h3>
+                <p id="letter" class="invalid">
+                    A <b>lowercase</b> letter
+                </p>
+                <p id="capital" class="invalid">
+                    A <b>capital (uppercase)</b> letter
+                </p>
+                <p id="number" class="invalid">
+                    A <b>number</b>
+                </p>
+                <p id="length" class="invalid">
+                    Minimum <b>8 characters</b>
+                </p>    
+            </div>
+        </form>
+
+        <p>Not registered? 
+              <a href="#" 
+               style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+        <div class="col-md-7 bs-reset">
+            <div class="login-copyright text-right">
+              <p>@2024-INDIA-All rights reserved.</p>
+              <p>Copyright &copy; Sowmya N</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var myInput = document.getElementById("psw");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
+        
+    // When the user clicks on the password field, show the message box
+    myInput.onfocus = function() {
+        document.getElementById("message").style.display = "block";
+    }
+        
+    // When the user clicks outside of the password field, hide the message box
+    myInput.onblur = function() {
+        document.getElementById("message").style.display = "none";
+    }
+        
+    // When the user starts to type something inside the password field
+    myInput.onkeyup = function() {
+        // Validate lowercase letters
+        var lowerCaseLetters = /[a-z]/g;
+        if(myInput.value.match(lowerCaseLetters)) {  
+            letter.classList.remove("invalid");
+            letter.classList.add("valid");
+        } else {
+            letter.classList.remove("valid");
+            letter.classList.add("invalid");
+        }
+          
+        // Validate capital letters
+        var upperCaseLetters = /[A-Z]/g;
+        if(myInput.value.match(upperCaseLetters)) {  
+            capital.classList.remove("invalid");
+            capital.classList.add("valid");
+        } else {
+            capital.classList.remove("valid");
+            capital.classList.add("invalid");
+        }
+        
+        // Validate numbers
+        var numbers = /[0-9]/g;
+        if(myInput.value.match(numbers)) {  
+            number.classList.remove("invalid");
+            number.classList.add("valid");
+        } else {
+            number.classList.remove("valid");
+            number.classList.add("invalid");
+        }
+          
+        // Validate length
+        if(myInput.value.length >= 8) {
+            length.classList.remove("invalid");
+            length.classList.add("valid");
+        } else {
+            length.classList.remove("valid");
+            length.classList.add("invalid");
+        }
+    }
+</script>
+
+</html>

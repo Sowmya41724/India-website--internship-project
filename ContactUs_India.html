@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSheet/StyleSheet_India.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .error {color: #FF0000;}
+    </style>
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["fullname"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+
+        let y = document.forms["myForm"]["DOB"].value;
+        if (y == "") {
+          alert("Date of Birth must be filled out");
+          return false;
+        }
+
+        let z = document.forms["myForm"]["Gmail"].value;
+        if (z == "") {
+          alert("G-mail must be filled out");
+          return false;
+        }
+
+        let p = document.forms["myForm"]["PhoneNumber"].value;
+        if (p == "") {
+          alert("Phone number must be filled out");
+          return false;
+        }
+
+      }
+      </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="lighter">
+        <h1 style="text-align: center;">
+          India
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="navbar">
+        <nav>
+          <a href="India_responsive.html#home">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">History 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="India_responsive.html#ancient">Ancient India</a>
+              <a href="India_responsive.html#modern">Modern India</a>
+            </div>
+          </div>
+          <a href="India_responsive.html#independence">Independence</a>
+          <a href="India_responsive.html#develop">Development</a>
+          <a href="Gallery_India.html">Gallery</a>
+          <a href="Video_India.html">Video</a>
+          <a href="About_India.html">About</a>
+          <a href="ContactUs_India.html">Contact Us</a>
+          <a href="Login_geek.html" target="_blank">Login</a>
+        </nav>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div style="background-color: darkgrey;padding: 20px;">
+          <h1 style="text-align: center;"><b>Contact Us</b></h1>
+        </div> 
+      </div>
+      <div class="container">
+        <div style="text-align:center">
+          <p>Fill the form to contact us:</p>
+          <p class="error">* required field</p>
+        </div>
+        <div class="row2">
+          <div class="column2">
+            <img class="myImages" id="myImg"src="https://static.mygov.in/indiancc/2021/09/mygov-10000000001030024419-1024x1024.png" style="width:100%;height: 50%;;">
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <div class="column2">
+            <div class="con">
+              <form  name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                <label for="fname"><i class="fa fa-user"></i> Full Name<span class="error">*</span></label>
+                <input type="text" id="fname" name="fullname" placeholder="Your name.." >
+                <label for="DOB"><i class="fa fa-birthday-cake"></i> Date Of Birth<span class="error">*</span></label>
+                <input type="text" id="numb" name="DOB" placeholder="Your DOB..">
+                <label for="gender"><i class="fa fa-child"></i> Gender</label>
+                  <input type="radio" name="gender" value="female">Female
+                  <input type="radio" name="gender" value="male">Male
+                  <input type="radio" name="gender" value="other">Other
+                  <input type="radio" name="gender" value="rathernotsay">Rather not say
+                  <br><br>
+                <label for="gmail"><i class="fa fa-envelope"></i> Gmail<span class="error">*</span></label>
+                <input type="text" id="gmail" name="Gmail" placeholder="Your gmail..">
+                <label for="phoneno"><i class="fa fa-phone"></i> Phone Number<span class="error">*</span></label>
+                <input type="text" id="phoneno" name="PhoneNumber" placeholder="Your phone no.." onblur="phonenumber(document.myForm.PhoneNumber)"/>
+                <label for="country"><i class="fa fa-institution"></i> Country</label>
+                <select id="country" name="country">
+                  <option value ="India">India</option>
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="Your address..">
+                <label for="subject"> Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <p style="font-size:large;padding: 0px;">If you want to attach any files:<i class="fa fa-paperclip"></i></p>
+                <input type="file" id="myFile" name="filename">
+                <br><br>
+                <input type="submit"  name="submit" value="Submit"/>
+              </form>
+            </div>
+          </div>
+          <h1 style="text-align: center;">The map</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38878.64651897438!2d77.78665665906279!3d9.430587894783354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06ceac3b2f20ed%3A0x8b90667c99454964!2sAnuppankulam%2C%20Tamil%20Nadu%20626189!5e0!3m2!1sen!2sin!4v1717740302920!5m2!1sen!2sin" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="lighter1">
+        <div class="w3-center w3-black w3-padding-small">
+          <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          </div>
+        
+          <p style="text-align: center;color:whitesmoke;">
+            @2024-INDIA-All rights reserved.<br>The Copyrights &copy; this website is owned by Sowmya N.
+          </p>
+        </div>
+      </div>
+  </div>
+  <!------------------phone number-------------------->
+  <script>
+    function phonenumber(inputtxt)
+    {
+      var phoneno = /^\d{10}$/;
+      if(inputtxt.value.match(phoneno))
+      {
+        return true;
+      }
+      else
+      {
+        alert("Not a valid Phone Number");
+        return false;
+      }
+    }
+
+  </script>
+  </body>
+  <!-----------------------modal image---------------------->
+  <script>
+    // create references to the modal...
+    var modal = document.getElementById('myModal');
+    // to all images -- note I'm using a class!
+    var images = document.getElementsByClassName('myImages');
+    // the image in the modal
+    var modalImg = document.getElementById("img01");
+    // and the caption in the modal
+    var captionText = document.getElementById("caption");
+
+    // Go through all of the images with our custom class
+    for (var i = 0; i < images.length; i++) {
+        var img = images[i];
+        // and attach our click listener for this image.
+        img.onclick = function(evt) {
+            console.log(evt);
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+</script>
+</html>
