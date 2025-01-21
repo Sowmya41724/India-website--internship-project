@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Home</title>
+        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="StyleSheet/StyleSheet_India.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="lighter">
+                <h1 style="text-align: center;">
+                    India
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="navbar">
+                <nav>
+                    <a href="#home">Home</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">History 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#ancient">Ancient India</a>
+                            <a href="#modern">Modern India</a>
+                        </div>
+                    </div>
+                    <a href="#independence">Independence</a>
+                    <a href="#develop">Development</a>
+                    <a href="Gallery_India.html">Gallery</a>
+                    <a href="Video_India.html">Video</a>
+                    <a href="About_India.html">About</a>
+                    <a href="ContactUs_India.html">Contact Us</a>
+                    <a href="Login_geek.html" target="_blank">Login</a>
+                </nav>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+         <!-- Banner Slideshow Section -->
+        <div class="banner-slideshow-container">
+            <div class="banner-slides fade">
+                <img src="Images/indian-flag-wave-banner-design-vector.jpg" style="width:100%">
+                <div class="banner-text">Welcome to India</div>
+            </div>
+            <div class="banner-slides fade">
+                <img src="Images/Taj-Mahal-Banner-55.jpg" style="width:100%">
+                <div class="banner-text">Explore the rich heritage and culture of India</div>
+            </div>
+            <div class="banner-slides fade">
+                <img src="Images/India-Gate_1400.jpg" style="width:100%">
+                <div class="banner-text">Experience the diversity of India</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="row">
+            <div id="home">
+                <h1 style="text-align: center;padding:0%;">
+                    <ins>
+                        Home
+                    </ins>
+                </h1>
+                <p style="text-align: center;padding:0%;">
+                    The following information is taken from other websites. So, Kindly check out their website for more information.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <img class="myImages" id="myImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/India-map-en.svg/1519px-India-map-en.svg.png" alt="India Map" style="width:600px;height:800px;">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="col-s-7" style="text-align: center;">
+                <p style="padding: 0%;">
+                    <b>India</b>, officially the Republic of India (ISO: Bhārat Gaṇarājya), is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023; and from the time of its independence in 1947, the world's most populous democracy. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west; China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar, and Indonesia.
+                </p>
+                <p style="padding:0%">
+                    Modern humans arrived on the Indian subcontinent from Africa no later than 55,000 years ago.Their long occupation, initially in varying forms of isolation as hunter-gatherers, has made the region highly diverse, second only to Africa in human genetic diversity. Settled life emerged on the subcontinent in the western margins of the Indus river basin 9,000 years ago, evolving gradually into the Indus Valley Civilisation of the third millennium BCE. By 1200 BCE, an archaic form of Sanskrit, an Indo-European language, had diffused into India from the northwest. Its evidence today is found in the hymns of the Rigveda. Preserved by an oral tradition that was resolutely vigilant, the Rigveda records the dawning of Hinduism in India. The Dravidian languages of India were supplanted in the northern and western regions. By 400 BCE, stratification and exclusion by caste had emerged within Hinduism, and Buddhism and Jainism had arisen, proclaiming social orders unlinked to heredity. Early political consolidations gave rise to the loose-knit Maurya and Gupta Empires based in the Ganges Basin. Their collective era was suffused with wide-ranging creativity, but also marked by the declining status of women, and the incorporation of untouchability into an organised system of belief. In South India, the Middle kingdoms exported Dravidian-languages scripts and religious cultures to the kingdoms of Southeast Asia.
+                </p>
+                <p style="padding:0%">
+                    In the early medieval era, Christianity, Islam, Judaism, and Zoroastrianism became established on India's southern and western coasts. Muslim armies from Central Asia intermittently overran India's northern plains, eventually founding the Delhi Sultanate, and drawing northern India into the cosmopolitan networks of medieval Islam. In the 15th century, the Vijayanagara Empire created a long-lasting composite Hindu culture in south India. In the Punjab, Sikhism emerged, rejecting institutionalised religion. The Mughal Empire, in 1526, ushered in two centuries of relative peace, leaving a legacy of luminous architecture. Gradually expanding rule of the British East India Company followed, turning India into a colonial economy, but also consolidating its sovereignty.[50] British Crown rule began in 1858. The rights promised to Indians were granted slowly, but technological changes were introduced, and modern ideas of education and the public life took root. A pioneering and influential nationalist movement emerged, which was noted for nonviolent resistance and became the major factor in ending British rule. In 1947 the British Indian Empire was partitioned into two independent dominions, a Hindu-majority Dominion of India and a Muslim-majority Dominion of Pakistan, amid large-scale loss of life and an unprecedented migration.
+                </p>
+                <p style="padding:0%">
+                    India has been a federal republic since 1950, governed through a democratic parliamentary system. It is a pluralistic, multilingual and multi-ethnic society. India's population grew from 361 million in 1951 to almost 1.4 billion in 2022. During the same time, its nominal per capita income increased from US$64 annually to US$2,601, and its literacy rate from 16.6% to 74%. From being a comparatively destitute country in 1951, India has become a fast-growing major economy and a hub for information technology services, with an expanding middle class. India has a space programme with several planned or completed extraterrestrial missions. Indian movies, music, and spiritual teachings play an increasing role in global culture. India has substantially reduced its rate of poverty, though at the cost of increasing economic inequality. India is a nuclear-weapon state, which ranks high in military expenditure. It has disputes over Kashmir with its neighbours, Pakistan and China, unresolved since the mid-20th century. Among the socio-economic challenges India faces are gender inequality, child malnutrition, and rising levels of air pollution. India's land is megadiverse, with four biodiversity hotspots. Its forest cover comprises 21.7% of its area. India's wildlife, which has traditionally been viewed with tolerance in India's culture, is supported among these forests, and elsewhere, in protected habitats.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <hr>
+            <div class="header" id="history">
+                <h1 Style="text-align: center;">
+                    History
+                </h1>
+            </div>
+        </div>
+        <div class="container-fluid"> 
+            <h2>
+                <div class="row" id="ancient">
+                    <div class="col-sm-12">
+                        <ins>
+                            Ancient India
+                        </ins>
+                    </div>
+                </div>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <img class="myImages" id="myImg" src="https://www.worldhistory.org/img/r/p/500x600/8299.jpg?v=1713732543" alt="Ancient stone panel" style="width:600px;height:440px">
+            </div>
+            <div class="col-s-7">
+                <p style="padding:0%">
+                    By 55,000 years ago, the first modern humans, or Homo sapiens, had arrived on the Indian subcontinent from Africa, where they had earlier evolved. The earliest known modern human remains in South Asia date to about 30,000 years ago. After 6500 BCE, evidence for domestication of food crops and animals, construction of permanent structures, and storage of agricultural surplus appeared in Mehrgarh and other sites in Balochistan, Pakistan. These gradually developed into the Indus Valley Civilisation, the first urban culture in South Asia, which flourished during 2500–1900 BCE in Pakistan and western India. Centred around cities such as Mohenjo-daro, Harappa, Dholavira, and Kalibangan, and relying on varied forms of subsistence, the civilisation engaged robustly in crafts production and wide-ranging trade.
+                </p>
+                <p style="padding:0%">
+                    During the period 2000-500 BCE, many regions of the subcontinent transitioned from the Chalcolithic cultures to the Iron Age ones. The Vedas, the oldest scriptures associated with Hinduism, were composed during this period, and historians have analysed these to posit a Vedic culture in the Punjab region and the upper Gangetic Plain. Most historians also consider this period to have encompassed several waves of Indo-Aryan migration into the subcontinent from the north-west. The caste system, which created a hierarchy of priests, warriors, and free peasants, but which excluded indigenous peoples by labelling their occupations impure, arose during this period. On the Deccan Plateau, archaeological evidence from this period suggests the existence of a chiefdom stage of political organisation. In South India, a progression to sedentary life is indicated by the large number of megalithic monuments dating from this period, as well as by nearby traces of agriculture, irrigation tanks, and craft traditions.
+                </p>
+                <p style="padding:0%">
+                    The Sangam literature of the Tamil language reveals that, between 200 BCE and 200 CE, the southern peninsula was ruled by the Cheras, the Cholas, and the Pandyas, dynasties that traded extensively with the Roman Empire and with West and Southeast Asia. In North India, Hinduism asserted patriarchal control within the family, leading to increased subordination of women.By the 4th and 5th centuries, the Gupta Empire had created a complex system of administration and taxation in the greater Ganges Plain; this system became a model for later Indian kingdoms. Under the Guptas, a renewed Hinduism based on devotion, rather than the management of ritual, began to assert itself. This renewal was reflected in a flowering of sculpture and architecture, which found patrons among an urban elite. Classical Sanskrit literature flowered as well, and Indian science, astronomy, medicine, and mathematics made significant advances.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <h2>
+                <div class="row" id="modern">
+                    <div class="col-sm-12">
+                        <ins>
+                            Modern India
+                        </ins> 
+                    </div>
+                </div>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <img class="myImages" id="myImg" src="https://media.istockphoto.com/id/803605554/photo/panoramic-view-of-south-central-mumbai-at-golden-hour.jpg?s=612x612&w=0&k=20&c=0YEBFLJ4u0tl06_5ib87kHFaTHK857YlE3OkmPxtzgA=" alt="Modern City" style="width:612px;height:408px;">
+            </div>
+            <div class="col-s-7">
+                <p style="padding:0%">
+                    Historians consider India's modern age to have begun sometime between 1848 and 1885. The appointment in 1848 of Lord Dalhousie as Governor General of the East India Company set the stage for changes essential to a modern state. These included the consolidation and demarcation of sovereignty, the surveillance of the population, and the education of citizens. Technological changes—among them, railways, canals, and the telegraph—were introduced not long after their introduction in Europe. However, disaffection with the company also grew during this time and set off the Indian Rebellion of 1857. Fed by diverse resentments and perceptions, including invasive British-style social reforms, harsh land taxes, and summary treatment of some rich landowners and princes, the rebellion rocked many regions of northern and central India and shook the foundations of Company rule. Although the rebellion was suppressed by 1858, it led to the dissolution of the East India Company and the direct administration of India by the British government. Proclaiming a unitary state and a gradual but limited British-style parliamentary system, the new rulers also protected princes and landed gentry as a feudal safeguard against future unrest. In the decades following, public life gradually emerged all over India, leading eventually to the founding of the Indian National Congress in 1885.
+                </p>
+                <p style="padding:0%">
+                    The rush of technology and the commercialisation of agriculture in the second half of the 19th century was marked by economic setbacks, and many small farmers became dependent on the whims of far-away markets. There was an increase in the number of large-scale famines, and, despite the risks of infrastructure development borne by Indian taxpayers, little industrial employment was generated for Indians. There were also salutary effects: commercial cropping, especially in the newly canalled Punjab, led to increased food production for internal consumption. The railway network provided critical famine relief, notably reduced the cost of moving goods, and helped nascent Indian-owned industry.
+                </p>
+                <p style="padding:0%">
+                    After World War I, in which approximately one million Indians served, a new period began. It was marked by British reforms but also repressive legislation, by more strident Indian calls for self-rule, and by the beginnings of a nonviolent movement of non-co-operation, of which Mahatma Gandhi would become the leader and enduring symbol. During the 1930s, slow legislative reform was enacted by the British; the Indian National Congress won victories in the resulting elections. The next decade was beset with crises: Indian participation in World War II, the Congress's final push for non-co-operation, and an upsurge of Muslim nationalism. All were capped by the advent of independence in 1947, but tempered by the partition of India into two states: India and Pakistan.
+                </p>
+                <p style="padding:0%">
+                    Vital to India's self-image as an independent nation was its constitution, completed in 1950, which put in place a secular and democratic republic. Per the London Declaration, India retained its membership of the Commonwealth, becoming the first republic within it. Economic liberalisation, which began in the 1980s and the collaboration with Soviet Union for technical know-how, has created a large urban middle class, transformed India into one of the world's fastest-growing economies, and increased its geopolitical clout. Yet, India is also shaped by seemingly unyielding poverty, both rural and urban; by religious and caste-related violence; by Maoist-inspired Naxalite insurgencies; and by separatism in Jammu and Kashmir and in Northeast India. It has unresolved territorial disputes with China and with Pakistan. India's sustained democratic freedoms are unique among the world's newer nations; however, in spite of its recent economic successes, freedom from want for its disadvantaged population remains a goal yet to be achieved.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <hr>
+            <div class="header" id="independence">
+                <h1 Style="text-align: center;">
+                    Independence
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <img class="myImages" id="myImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Marche_sel.jpg/300px-Marche_sel.jpg" alt="Mahatma Gandhi" style="width:612px;height:408px;">
+            </div>
+            <div class="col-s-7">
+                <p style="padding:0%">
+                    The Indian Independence Movement, was a series of historic events in South Asia with the ultimate aim of ending British colonial rule. It lasted until 1947, when the Indian Independence Act 1947 was passed.
+                </p>
+                <p style="padding:0%">
+                    The first nationalistic movement for Indian independence emerged in the Province of Bengal. It later took root in the newly formed Indian National Congress with prominent moderate leaders seeking the right to appear for Indian Civil Service examinations in British India, as well as more economic rights for natives. The first half of the 20th century saw a more radical approach towards self-rule.
+                </p>
+                <p style="padding:0%">
+                    The stages of the independence struggle in the 1920s were characterised by the leadership of Mahatma Gandhi and Congress' adoption of Gandhi's policy of non-violence and civil disobedience. Some of the leading followers of Gandhi's ideology were Jawaharlal Nehru, Vallabhbhai Patel, Abdul Ghaffar Khan, Maulana Azad, and others. Intellectuals such as Rabindranath Tagore, Subramania Bharati, and Bankim Chandra Chattopadhyay spread patriotic awareness. Female leaders like Sarojini Naidu, Vijaya Lakshmi Pandit, Pritilata Waddedar, and Kasturba Gandhi promoted the emancipation of Indian women and their participation in the freedom struggle.
+                </p>
+                <p style="padding:0%">
+                    Few leaders followed a more violent approach, which became especially popular after the Rowlatt Act, which permitted indefinite detention. The Act sparked protests across India, especially in the Punjab province, where they were violently suppressed in the Jallianwala Bagh massacre.
+                </p>
+                <p style="padding:0%">
+                    The Indian independence movement was in constant ideological evolution. Essentially anti-colonial, it was supplemented by visions of independent, economic development with a secular, democratic, republican, and civil-libertarian political structure. After the 1930s, the movement took on a strong socialist orientation. It culminated in the Indian Independence Act 1947, which ended Crown suzerainty and partitioned British India into the Dominion of India and the Dominion of Pakistan.
+                </p>
+                <p style="padding:0%">
+                    India remained a Crown Dominion until 26 January 1950, when the Constitution of India established the Republic of India. Pakistan remained a dominion until 1956 when it adopted its first constitution. In 1971, East Pakistan declared its own independence as Bangladesh.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <hr>
+            <div class="header" id="develop">
+                <h1 Style="text-align: center;">
+                    Development
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <img class="myImages" id="myImg" src="https://www.infrabazaar.com/infracss/blog/6026-tourisminfrastructureanddevelopmentinindiainfrabazaar.png" alt="India's Development" style="width:612px;height:408px;">
+            </div>
+            <div class="col-s-7">
+                <p style="padding:0%">
+                    India is one of the fastest growing economies of the world and is poised to continue on this path, with aspirations to reach high middle income status by 2047, the centenary of Indian independence. It is also committed to ensuring that its continued growth path is equipped to deal with the challenges of climate change, and in line with its goal of achieving net-zero emissions by 2070.
+                </p>
+                <p style="padding:0%">
+                    The growth of the past two decades has also led to India making remarkable progress in reducing extreme poverty. Between 2011 and 2019, the country is estimated to have halved the share of the population living in extreme poverty - below $2.15 per person per day (2017 PPP) (World Bank Poverty and Inequality Portal and Macro Poverty Outlook, Spring 2023). In recent years, however, the pace of poverty reduction has slowed especially during the COVID-19 pandemic, but has since moderated in 2021-22.
+                </p>
+                <p style="padding:0%">
+                    Certain challenges persist. Inequality in consumption continues, with a Gini index of around 35 over the past two decades. Child malnutrition has remained high, with 35.5 percent of children under the age of 5 years being stunted, with the figure rising to 67 percent for children in the 6-59 months age group. Headline employment indicators have improved since 2020 but concerns remain about the quality of jobs created and the real growth in wages, as well as around the low participation of women in the laborforce.
+                </p>
+                <p style="padding:0%">
+                    India's aspiration to achieve high income status by 2047 will need to be realized through a climate-resilient growth process that delivers broad-based gains to the bottom half of the population. Growth-oriented reforms will need to be accompanied by an expansion in good jobs that keeps pace with the number of labor market entrants. At the same time, gaps in economic participation will need to be addressed, including by bringing more women into the workforce.
+                </p>
+                <p style="padding:0%">
+                    The World Bank is partnering with the government in this effort by helping strengthen policies, institutions, and investments to create a better future for the country and its people through green, resilient, and inclusive development.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="lighter1">
+                <div class="w3-center w3-black w3-padding-small">
+                    <div class="w3-xlarge w3-section">
+                      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                      <i class="fa fa-instagram w3-hover-opacity"></i>
+                      <i class="fa fa-snapchat w3-hover-opacity"></i>
+                      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                      <i class="fa fa-twitter w3-hover-opacity"></i>
+                      <i class="fa fa-linkedin w3-hover-opacity"></i>
+                    </div>
+
+                    <p style="text-align: center;color:whitesmoke;">
+                        @2024-INDIA-All rights reserved.<br>The Copyrights &copy; this website is owned by Sowmya N.
+                    </p>
+                </div>
+            </div>
+        </div>
+       <!--------------banner slideshow--------------------------->
+       <script>
+        var slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("banner-slides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
+    
+    </body>
+    <!----------------------for zoom image-map--------------------------------------->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+            
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+            
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+            
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
+    <!--------------------------------------scroll down ------------------------------------------>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script> 
+    <!-----------------------------multiple modal images----------------------------------------->
+    <script>
+        // create references to the modal...
+        var modal = document.getElementById('myModal');
+        // to all images -- note I'm using a class!
+        var images = document.getElementsByClassName('myImages');
+        // the image in the modal
+        var modalImg = document.getElementById("img01");
+        // and the caption in the modal
+        var captionText = document.getElementById("caption");
+
+        // Go through all of the images with our custom class
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            // and attach our click listener for this image.
+            img.onclick = function(evt) {
+                console.log(evt);
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+    </script>   
+</html>
